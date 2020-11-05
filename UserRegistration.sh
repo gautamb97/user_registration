@@ -11,7 +11,7 @@ read -p "Enter your password " ruleone;
 pattern="^[A-Z]{1}[a-z]{2,10}$"
 pattern1="^[a-z0-9\.\_\-a-z0-9]*\@[a-z]*\.(com|org|in|co)$"
 pattern2="^\+[0-9]*\ [0-9]{10}$"
-pattern3="^[a-z]{8,15}$"
+pattern3="^[a-zA-Z]{8,15}$"
 
 
 if [[ $user_input =~ $pattern ]];
@@ -20,6 +20,7 @@ then
 else
         echo "invalid User Nmae";
 fi
+
 if [[ $last_name_input =~ $pattern ]];
 then
         echo $last_name_input;
@@ -33,12 +34,14 @@ then
 else
         echo "invalid Email Address";
 fi
+
 if [[ $mobile_number =~ $pattern2 ]];
 then
         echo $mobile_number;
 else
         echo "invalid Mobile Number";
 fi
+
 if [[ $ruleone =~ $pattern3 ]];
 then
         echo "***********";

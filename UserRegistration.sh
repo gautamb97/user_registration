@@ -3,7 +3,7 @@
 echo "WELCOME FOR REGISTRATION";
 
 read -p "Enter your First Name " user_input;
-pattern="^[A-Za-z]{3,10}$"
+pattern="^[A-Z]{1}[a-z]{3,10}$"
 if [[ $user_input =~ $pattern ]];
 then
         echo "valid";

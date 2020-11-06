@@ -11,7 +11,7 @@ read -p "Enter your password " ruleone;
 pattern="^[A-Z]{1}[a-z]{2,10}$"
 pattern1="^[a-z0-9\.\_\-a-z0-9]*\@[a-z]*\.(com|org|in|co)$"
 pattern2="^\+[0-9]*\ [0-9]{10}$"
-pattern3="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})$"
+pattern3="^(?=.*[a-z])(?=.*[A-Z])(?=.{8,})$"
 
 
 

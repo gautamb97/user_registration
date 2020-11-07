@@ -9,7 +9,7 @@ read -p "Enter your Mobile Number With Country Code " mobile_number;
 read -p "Enter your password " ruleone;
 
 pattern="^[A-Z]{1}[a-z]{2,10}$"
-pattern1="^[a-z0-9\.\_\-a-z0-9]*\@[a-z]*\.(com|org|in|co)$"
+pattern1="^[a-z0-9\.\_\-\+a-z0-9]*\@[a-z0-9]*\.(com|org|in|co|net|com\.au|com\.com)$"
 pattern2="^\+[0-9]*\ [0-9]{10}$"
 pattern3="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@]{1}$)(?=.{8,})"
 
